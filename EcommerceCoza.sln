@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcommerceCoza", "WebApplication4\EcommerceCoza.csproj", "{A05BB3FE-2C30-4099-89D3-C45BB98D58A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcommerceCoza.MVC", "WebApplication4\EcommerceCoza.MVC.csproj", "{A05BB3FE-2C30-4099-89D3-C45BB98D58A6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerceCoza.DAL", "ECommerceCoza.DAL\ECommerceCoza.DAL.csproj", "{59842F85-73D7-4364-9490-2F5D85C8B730}"
 EndProject

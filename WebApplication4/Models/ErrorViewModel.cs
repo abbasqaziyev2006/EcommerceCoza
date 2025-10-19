@@ -1,4 +1,4 @@
-namespace WebApplication4.Models
+namespace EcommerceCoza.MVC.Models
 {
     public class ErrorViewModel
     {
