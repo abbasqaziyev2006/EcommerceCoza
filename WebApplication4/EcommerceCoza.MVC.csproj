@@ -7,13 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ECommerceCoza.BLL\ECommerceCoza.BLL.csproj" />
+    <Compile Remove="Views\Address\**" />
+    <Compile Remove="Views\Order\**" />
+    <Compile Remove="Views\Wishlist\**" />
+    <Content Remove="Views\Address\**" />
+    <Content Remove="Views\Order\**" />
+    <Content Remove="Views\Wishlist\**" />
+    <EmbeddedResource Remove="Views\Address\**" />
+    <EmbeddedResource Remove="Views\Order\**" />
+    <EmbeddedResource Remove="Views\Wishlist\**" />
+    <None Remove="Views\Address\**" />
+    <None Remove="Views\Order\**" />
+    <None Remove="Views\Wishlist\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Address\" />
-    <Folder Include="Views\Order\" />
-    <Folder Include="Views\Wishlist\" />
+    <ProjectReference Include="..\ECommerceCoza.BLL\ECommerceCoza.BLL.csproj" />
   </ItemGroup>
 
   <ItemGroup>
