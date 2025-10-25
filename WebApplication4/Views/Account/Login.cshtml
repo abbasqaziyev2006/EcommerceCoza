@@ -1,84 +1,42 @@
 ﻿@using EcommerceCoza.MVC.Models
  @model LoginViewModel
+<main class="pt-90">
+    <div class="mb-4 pb-4"></div>
+    <section class="login-register container">
+        <ul class="nav nav-tabs mb-5" id="login_register" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link nav-link_underscore active" id="login-tab" data-bs-toggle="tab" href="#tab-item-login"
+                   role="tab" aria-controls="tab-item-login" aria-selected="true">Login</a>
+            </li>
+        </ul>
+        <div class="tab-content pt-2" id="login_register_tab_content">
+            <div class="tab-pane fade show active" id="tab-item-login" role="tabpanel" aria-labelledby="login-tab">
+                <div class="login-form">
+                    <form method="POST" action="#" name="login-form" class="needs-validation" novalidate="">
+                        <div class="form-floating mb-3">
+                            <input class="form-control form-control_gray " name="email" value="" required="" autocomplete="email"
+                                   autofocus="">
+                            <label for="email">Email address *</label>
+                        </div>
 
-<!-- page-title -->
-<div class="tf-page-title style-2">
-    <div class="container-full">
-        <div class="heading text-center">Log in</div>
-    </div>
-</div>
-<!-- /page-title -->
+                        <div class="pb-3"></div>
 
-<section class="flat-spacing-10">
-    <div class="container">
-        <div class="tf-grid-layout lg-col-2 tf-login-wrap">
-            <div class="tf-login-form">
-                <div id="recover">
-                    <h5 class="mb_24">Reset your password</h5>
-                    <p class="mb_30">We will send you an email to reset your password</p>
-                    <div>
-                        <form class="" id="login-form" action="#" method="post" accept-charset="utf-8"
-                              data-mailchimp="true">
-                            <div class="tf-field style-1 mb_15">
-                                <input class="tf-field-input tf-input" placeholder="" type="email"
-                                       id="property3" name="email">
-                                <label class="tf-field-label fw-4 text_black-2" for="property3">Email *</label>
-                            </div>
-                            <div class="mb_20">
-                                <a href="#login" class="tf-btn btn-line">Cancel</a>
-                            </div>
-                            <div class="">
-                                <button type="submit"
-                                        class="tf-btn w-100 radius-3 btn-fill animate-hover-btn justify-content-center">
-                                    Reset
-                                    password
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                        <div class="form-floating mb-3">
+                            <input id="password" type="password" class="form-control form-control_gray " name="password" required=""
+                                   autocomplete="current-password">
+                            <label for="customerPasswodInput">Password *</label>
+                        </div>
+
+                        <button class="btn btn-primary w-100 text-uppercase" type="submit">Log In</button>
+
+                        <div class="customer-option mt-4 text-center">
+                            <span class="text-secondary">No account yet?</span>
+                            <a href="register.html" class="btn-text js-show-register">Create Account</a> | <a href="my-account.html"
+                                                                                                              class="btn-text js-show-register">My Account</a>
+                        </div>
+                    </form>
                 </div>
-                <div id="login">
-                    <h5 class="mb_36">Log in</h5>
-                    <div>
-                        <form method="post" class="" id="login-form" accept-charset="utf-8">
-                            <div class="tf-field style-1 mb_15">
-                                <input asp-for="Email" class="tf-field-input tf-input" placeholder="" >
-                                <label class="tf-field-label fw-4 text_black-2" for="property3">Email *</label>
-                                <span asp-validation-for="Email"></span>
-                            </div>
-                            <div class="tf-field style-1 mb_30">
-                                <input asp-for="Password" class="tf-field-input tf-input" placeholder="" >
-                                <label class="tf-field-label fw-4 text_black-2" for="property4">
-                                    Password
-                                    *
-                                </label>
-                                <span asp-validation-for="Password" ></span>
-                            </div>
-                            <div class="mb_20">
-                                <a href="#recover" class="tf-btn btn-line">Forgot your password?</a>
-                            </div>
-                            <div class="">
-                                <button type="submit"
-                                        class="tf-btn w-100 radius-3 btn-fill animate-hover-btn justify-content-center">
-                                    Log
-                                    in
-                                </button>
-                            </div>
-                            <div asp-validation-summary="ModelOnly"></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="tf-login-content">
-                <h5 class="mb_36">I'm new here</h5>
-                <p class="mb_20">
-                    Sign up for early Sale access plus tailored new arrivals, trends and
-                    promotions. To opt out, click unsubscribe in our emails.
-                </p>
-                <a asp-controller="account" asp-action="register" class="tf-btn btn-line">
-                    Register<i class="icon icon-arrow1-top-left"></i>
-                </a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</main>

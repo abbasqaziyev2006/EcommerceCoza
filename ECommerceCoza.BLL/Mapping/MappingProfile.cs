@@ -49,13 +49,6 @@ namespace ECommerceCoza.BLL.Mapping
             CreateMap<Social, SocialCreateViewModel>().ReverseMap();
             CreateMap<Social, SocialUpdateViewModel>().ReverseMap();
 
-            CreateMap<Currency, CurrencyViewModel>().ReverseMap();
-            CreateMap<Currency, CurrencyCreateViewModel>().ReverseMap();
-            CreateMap<Currency, CurrencyUpdateViewModel>().ReverseMap();
-
-            CreateMap<Language, LanguageViewModel>().ReverseMap();
-            CreateMap<Language, LanguageCreateViewModel>().ReverseMap();
-            CreateMap<Language, LanguageUpdateViewModel>().ReverseMap();
 
             CreateMap<Address, AddressViewModel>().ReverseMap();
             CreateMap<Address, AddressCreateViewModel>().ReverseMap();

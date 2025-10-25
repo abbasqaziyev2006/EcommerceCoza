@@ -13,8 +13,6 @@ namespace ECommerceCoza.DAL.DataContext
         public DbSet<Color> Colors { get; set; } = null!;
         public DbSet<ProductImage> ProductImages { get; set; } = null!;
         public DbSet<ProductVariant> ProductVariants { get; set; } = null!;
-        public DbSet<Currency> Currencies { get; set; } = null!;
-        public DbSet<Language> Languages { get; set; } = null!;
         public DbSet<Bio> Bios { get; set; } = null!;
         public DbSet<Social> Socials { get; set; } = null!;
         public DbSet<WishlistItem> WishlistItems { get; set; } = null!;

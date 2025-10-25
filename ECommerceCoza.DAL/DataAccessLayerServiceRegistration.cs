@@ -26,8 +26,6 @@ namespace EcommerceCoza.DAL
             services.AddScoped<IProductVariantRepository, ProductVariantRepository>();
             services.AddScoped<IBioRepository, BioRepository>();
             services.AddScoped<ISocialRepository, SocialRepository>();
-            services.AddScoped<ICurrencyRepository, CurrencyRepository>();
-            services.AddScoped<ILanguageRepository, LanguageRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
             services.AddScoped<IWishlistItemRepository, WishlistItemRepository>();

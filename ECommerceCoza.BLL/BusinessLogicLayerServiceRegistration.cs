@@ -18,8 +18,6 @@ namespace EcommerceCoza.BLL
             services.AddScoped<IProductVariantService, ProductVariantManager>();
             services.AddScoped<IBioService, BioManager>();
             services.AddScoped<ISocialService, SocialManager>();
-            services.AddScoped<ILanguageService, LanguageManager>();
-            services.AddScoped<ICurrencyService, CurrencyManager>();
             services.AddScoped<IAddressService, AddressManager>();
             services.AddScoped<IWishlistItemService, WishlistItemManager>();
             services.AddScoped<IOrderService, OrderManager>();
